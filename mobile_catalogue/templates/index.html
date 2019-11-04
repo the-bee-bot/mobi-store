@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="ctlgApp">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>{% block title %}{% endblock %}</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="{{url_for('static' , filename='bootstrap.min.css')}}" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="{{url_for('static' , filename='app.css')}}" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="static/js/lib/html5shiv-3.7.0.js"></script>
+    <script src="static/js/lib/respond-1.4.2.min.js"></script>
+    <![endif]-->
+    <!-- jQuery -->
+    <script src="static/js/lib/jquery-2.1.3.min.js"></script>
+    <script src="static/js/lib/angular-1.5.8.min.js"></script>
+    <script src="static/js/lib/angular-route-1.5.8.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="static/js/lib/bootstrap.min.js"></script>
+    <script src="//apis.google.com/js/platform.js?onload=start"></script>
+    <script src="static/js/app.js"></script>
+</head>
+
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#/">Mobile Catalogue</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                {% if user %}
+                <li>
+                    <a href="#create-item" class="btn">
+                        <i class="icon-pencil-square-o" aria-hidden="true"></i>Add
+                    </a>
+                </li>
+                {% endif %}
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                {% if user %}
+                <li>
+                    <a id="username" data-userid="{{user.name}}">
+                        <img class="avatar img-responsive" src="{{user.img}}" alt="user avatar image">
+                    </a>
+                </li>
+                <li>
+                    <a href="/signout">
+                        Signout
+                    </a>
+                </li>
+                {% else %}
+                <li>
+                    <!--trigger google signin activity-->
+                    <a href="/callback">
+                        G+Signin
+                    </a>
+                </li>
+                {% endif %}
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--for notfication messages display-->
+<div id="alertsDiv" class="alert" hidden></div>
+<!-- Page Content handled by angularjs-->
+<div class="container" data-ng-view></div>
+</body>
+
+</html>

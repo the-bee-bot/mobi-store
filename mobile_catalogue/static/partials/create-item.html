@@ -1,0 +1,43 @@
+<div class="create-item-div">
+    <h4>Add a mobile item</h4>
+    <form data-ng-submit="createItem()">
+        <table class="table">
+            <tbody>
+            <tr>
+                <td>Brand:</td>
+                <td>
+                    <input data-ng-model="fieldCtgry" type="text" list="categoriesLs" class="form-control" required>
+                    <datalist id="categoriesLs">
+                        <option data-ng-repeat="c in categoryTitles" value="{{c}}"> {{c}}</option>
+                    </datalist>
+                </td>
+            </tr>
+            <tr>
+                <td>Title:</td>
+                <td>
+                    <input data-ng-model="itemTitle" type="text" class="form-control" required>
+                </td>
+            </tr>
+            <tr>
+                <td>URL to mobile image:</td>
+                <td>
+                    <input data-ng-model="itemImgUrl" type="text" class="form-control" required>
+                </td>
+            </tr>
+            <tr data-ng-repeat="field in fields">
+                <td>
+                    <input class="fieldName" type="text" data-ng-model="field.name" required/>
+                </td>
+                <td>
+                    <textarea class="form-control" data-ng-model="field.value" required></textarea>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <button data-ng-click="addNewChoice()">Add field</button>
+
+        <button id="submitBtn" name="submitBtn" type="submit" class="btn btn-primary">
+            {{action}}
+        </button>
+    </form>
+</div>

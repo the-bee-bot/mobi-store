@@ -1,0 +1,18 @@
+<div class="row">
+    <div class="col-md-12 text-center">
+        <h1>Brands</h1>
+    </div>
+</div>
+<!--
+            <p>{{category.name}}</p><span>({{category.item_count()}})</span></a>
+ -->
+
+<div class="row" data-ng-repeat="categ in categories | orderBy: 'category':true ">
+    <div class="col-md-4 card center-block">
+        <div class="card-container">
+            <a href="#/categ/{{ categ.id }}">
+                <h4 class="text-center">{{ categ.category }}</h4>
+            </a>
+        </div>
+    </div>
+</div>

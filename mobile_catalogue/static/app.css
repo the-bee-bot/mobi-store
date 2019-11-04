@@ -1,0 +1,257 @@
+body {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #F8F8F8;
+}
+
+.blog-content {
+    width: 100%;
+    height: 60vh;
+}
+
+.container a {
+    text-decoration: none;
+    color: black;
+}
+
+.errormsg {
+    color: red;
+}
+
+.form-signin {
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+    margin-bottom: 10px;
+}
+
+.form-signin .checkbox {
+    font-weight: normal;
+}
+
+.form-signin .form-control {
+    position: relative;
+    height: auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.form-signin .form-control:focus {
+    z-index: 2;
+}
+
+.btn-var-width {
+    width: 100%;
+}
+
+.btn-right {
+    float: right;
+}
+
+.btn-left {
+    float: left;
+}
+
+.btn-blog {
+    background-color: #868c92;
+    border-color: #0a0a0a;
+}
+
+.divider {
+    border: 1px solid #7d97ad;
+    margin: 2% 0px;
+}
+
+.small p {
+    margin: 0;
+}
+
+.font-large {
+    font-size: 1.5em;
+}
+
+.btn-blog:hover {
+    color: #fff;
+    background-color: #3c4348;
+    border-color: #0a0a0a;
+}
+
+.form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.form-inline {
+    display: inline-flex;
+}
+
+.form-inline button {
+    margin: 0 12px;
+}
+
+.media-heading button {
+    background: transparent;
+    border: none;
+}
+
+.table input {
+    border: none;
+}
+
+.table .fieldName {
+    background: transparent;
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    margin-top: 1%;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-container {
+    padding: 2px 16px;
+}
+
+.card-header h3 {
+    display: inline;
+}
+
+.card-tools {
+    float: right;
+}
+
+.card-tools button {
+    display: inline;
+    background: transparent;
+    border: none;
+}
+
+.card-container img {
+    border-radius: 5px 5px 0 0;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.center-block {
+    float: none;
+}
+
+.avatar {
+    width: 30px;
+    height: 30px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+body {
+    padding: 70px;
+}
+
+
+/*for iconmoon fonts*/
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('fonts/icomoon.eot?z6ppt4');
+    src: url('fonts/icomoon.eot?z6ppt4#iefix') format('embedded-opentype'), url('fonts/icomoon.ttf?z6ppt4') format('truetype'), url('fonts/icomoon.woff?z6ppt4') format('woff'), url('fonts/icomoon.svg?z6ppt4#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-clipboard-edit:before {
+    content: "\e903";
+}
+
+.icon-chat-alt-fill:before {
+    content: "\e902";
+}
+
+.icon-pencil2:before {
+    content: "\e906";
+}
+
+.icon-quill:before {
+    content: "\e907";
+}
+
+.icon-profile:before {
+    content: "\e923";
+}
+
+.icon-bin:before {
+    content: "\e9ac";
+}
+
+.icon-bin2:before {
+    content: "\e9ad";
+}
+
+.icon-heart:before {
+    content: "\e9da";
+}
+
+.icon-sign-out:before {
+    content: "\e904";
+}
+
+.icon-sign-in:before {
+    content: "\e905";
+}
+
+.icon-home:before {
+    content: "\e908";
+}
+
+.icon-edit:before {
+    content: "\e909";
+}
+
+.icon-pencil-square-o:before {
+    content: "\e909";
+}
+
+.icon-thumbs-up:before {
+    content: "\e900";
+}
+
+.icon-thumbs-down:before {
+    content: "\e901";
+}
+
+
+/*iconmoon*/
